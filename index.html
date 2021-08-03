@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Validation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form class='form' novalidate>
+            <div class="formBox">
+                <label for="mail">
+                    <span>Email Addrress:</span>
+                    <input type='email' class='user' id='mail' name='mail' autocomplete="off">
+                    <span class='error' aria-live='polite'></span>
+                </label>
+                <label for="country">
+                    <span>Country:</span>
+                    <input type='text' class='user' id='country' name='country' minlength="3" autocomplete="off">
+                    <span class='errorC' aria-live='polite'></span>
+                </label>
+                <label for="zip">
+                    <span>Zip-Code:</span>
+                    <input type='number' class='user' id='zip' name='zip' min="10000" max="99999" autocomplete="off">
+                    <span class='errorZ' aria-live='polite'></span>
+                </label>
+                <label for="pass">
+                    <span>Password:</span>
+                    <input type='password' class='user' id='pass' name='pass' minlength='6' autocomplete="off">
+                    <span class='errorP' aria-live='polite'></span>
+                </label>
+                <label for="passc">
+                    <span>Confirm Password:</span>
+                    <input type='password' class='user' id='passc' name='passc' minlength='6' autocomplete="off">
+                    <span class='errorPc' aria-live='polite'></span>
+                </label>
+            </div>
+            <button class='submit'>Submit</button>
+        </form>
+
+    <script src="valid.js"></script>
+</html>
